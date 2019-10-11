@@ -16,16 +16,15 @@ c) o(bunnies) ===> o(n)
 
 ### get the pivot floor and the number of story 
 def(getOptimalFloor(n)):
-    eggs = number of eggs
-    dropped = number of eggs dropped
-    brokenEggs = 0
-    f = math.ceil(n/2)
-    for floor in range(f , n+1): ====> 0(n)
-        brokenEggs = sum(getBrokenEggs) ===> o(1)
-    notBrokenEggs = dropped - brokenEggs =====> o(1)
-    if(notBrokenEggs > brokenEggs): =====> o(1)
-        return f ====> o(1)
-    getOptimalFloor(f+1) =====> o(n)
+    value = []
+    dropped = number of egg dropped
+    for floor in range(0 , n+1): ====> 0(n)
+        for in range(floor, n+1): ====> 0(n)
+            AllbrokenEggs = sum(BrokenEggs) ===> o(1)
+        notBrokenEggs = dropped - AllbrokenEggs =====> o(1)
+        difference = notBrokenEggs - AllbrokenEggs
+        value.append(difference)
+    return value.index(max(value))
     
     
 ### if the number of eggs dropped minus the number of eggs broken is less than  number of broken eggs, move f above
