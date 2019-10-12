@@ -15,18 +15,20 @@ c) o(bunnies) ===> o(n)
 ## Using Polya
 
 ### get the pivot floor and the number of story 
-def(getOptimalFloor(n)):
-    value = []
-    dropped = number of egg dropped
-    for floor in range(0 , n+1): ====> 0(n)
-        for in range(floor, n+1): ====> 0(n)
-            AllbrokenEggs = sum(BrokenEggs) ===> o(1)
-        notBrokenEggs = dropped - AllbrokenEggs =====> o(1)
-        difference = notBrokenEggs - AllbrokenEggs
-        value.append(difference)
-    return value.index(max(value))
-    
-    
+import math
+def getOptimalFloor(floors ,noOfFloors ,targetFloor ):
+    indexOfGroundFloor = 0
+    indexOfLastFloor = noOfFloors-1
+    if floors\[indexOfGroundFloor] == targetFloor:
+        return indexOfGroundFloor
+    while indexOfLastFloor is not indexOfGroundFloor
+        indexOfMiddleFloor = math.ceil( (indexOfGroundFloor + indexOfLastFloor) /2)
+        middleFloor = floors\[indexOfMiddleFloor\]
+        if targetFloor < middleFloor:
+            indexOfLastFloor = indexOfMiddleFloor - 1
+        else:
+            indexOfLastFloor = middleFloor
+    O(n(log(n)    
 ### if the number of eggs dropped minus the number of eggs broken is less than  number of broken eggs, move f above
 
 
